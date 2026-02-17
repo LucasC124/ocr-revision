@@ -8,18 +8,44 @@
 
 
 
-
+def email_check():
 # Welcome the user to the email address validator with a message
+    print("Welcome to the email address validator.")
 
 
 # If using a loop below, do you need a variable to trigger the condition first of all? (true/false)
 # Come back to this after thinking about the next section
 
+# I didn't choose to do a loop but if I was would you have to do something like email_valid == False 
+# Then run a while loop. Example: while email_vaild == false ...
+
 
 # I need to ask the user to input an email address.
 # If calling a function you might want to have a loop here to keep asking and calling the function until a valid address format is entered.
 # Once valid print out a message confirming the format is valid.
+    new_email = input("Please enter a new email address: ")
 
+    if " " in new_email:
+        print("Email must not contain any spaces.")
 
+    elif new_email.count("@") != 1:
+        print("Email can only contain one '@' symbol.")
+
+    else:
+        email_user, email_domain = new_email.split("@")
+
+        if len(email_user) == 0:
+            print("Email user before '@' cannot be empty.")
+
+        elif "." not in email_domain:
+            print("Domain must contain a '.' symbol.")
+
+        else:
+            print("Email is valid.")
+    
 # Print a message saying thanks for using the email address validator
+    print("Thanks for using the email validator.")
+
+email_check()
+
 
