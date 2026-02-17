@@ -3,9 +3,22 @@
 
 # Should you consider if or what to output when there is only a single number in the list?
 # Where will the numbers be stored?
+number_list = []
 
 
 # Handle the repeated input of numbers.
-# Do you want to only display max and min numbers once there are two or more numbers in the list?
-# Consider how to stop the program.
+number_count = int(input("Please enter as many numbers as you want: "))
 
+for i in range(number_count):
+    number = int(input(f"enter number {i + 1}: "))
+    number_list.append(number)
+
+# Do you want to only display max and min numbers once there are two or more numbers in the list?
+if len(number_list) > 1: # I had to look up how to use min and max for the list
+    print("maximum number", max(number_list))
+    print("minimum number", min(number_list))
+else:
+    print("Not enough numbers entered")
+    
+# Consider how to stop the program.
+quit ()
