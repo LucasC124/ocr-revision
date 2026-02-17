@@ -18,7 +18,7 @@ if len(number_list) > 1: # I had to look up how to use min and max for the list
     print("maximum number", max(number_list))
     print("minimum number", min(number_list))
 else:
-    print("Not enough numbers entered")
+    print("Not enough numbers entered. ")
     
 # Consider how to stop the program.
 quit ()

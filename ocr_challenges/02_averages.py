@@ -3,7 +3,7 @@
 # I need the user to input a series of numbers until they want to output the average or quit the program.
 num_input = []
 
-number_count = int(input("how many numbers would you like to enter "))
+number_count = int(input("How many numbers would you like to enter. "))
 
 # Where will the numbers be stored?
 for i in range(number_count):
@@ -17,7 +17,7 @@ for i in range(number_count):
 
 
 # How can we calculate the average? - sum of the numbers divided by the count of numbers
-average_of_num = input("type 'average of the numbers' to calculate the average or type 'quit' to end the program: ")
+average_of_num = input("Type 'average of the numbers' to calculate the average or type 'quit' to end the program: ")
     
 # Output the average
 

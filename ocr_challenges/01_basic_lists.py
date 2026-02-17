@@ -3,7 +3,7 @@
 
 # A list to store the names as mentioned in the questions.
 name_list = []
-name_inputs = int(input("Enter the number of names you would like to add"))
+name_inputs = int(input("Enter the number of names you would like to add. "))
 
 # Repeated prompt to allow a series of names to be inputted.
 for i in range(name_inputs):
@@ -12,7 +12,7 @@ for i in range(name_inputs):
     
 # Following the repeated input of names
 # Prompt whether the list should be printed in the original or reverse order.
-list_order_int = input("Should the list be printed in the 'original order' or 'reverse order' ")
+list_order_int = input("Should the list be printed in the 'original order' or 'reverse order'. ")
 
 # Handle the capture of the print order based on the user's input.
 if list_order_int.lower() == "original order": # I did have to look up the .lower()

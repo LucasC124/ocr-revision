@@ -33,9 +33,9 @@ else:
     confirm_new_password = input("Please re-enter your new password: ")
 
     if new_password == confirm_new_password:
-        print("Password was successfully changed.")
+        print("Password was successfully changed. ")
     else:
-        print("Passwords do not match.")
+        print("Passwords do not match. ")
 
 
 
