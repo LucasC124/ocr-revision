@@ -12,25 +12,25 @@ password_conditions = input("If you want to reset your password the following co
 new_password = str(input("Please enter a new password that meets the conditions. "))
 
 # Capture the user's input
-new_password = []
+new_password = [] 
 
 # Check if the password is at least 8 characters long
 # Then check if the password has both lower and upper case letters
 # Finally, check if the password entered the second time is the same as the first time
 new_password = input("Enter a new password: ")
 
-if len(new_password) < 8:
+if len(new_password) < 8: # checks if password is long enough 
     print("Password isn't long enough.")
 
 # I had to search up how to check for lowercase and uppercase characters
-elif not any(char.islower() for char in new_password):
+elif not any(char.islower() for char in new_password): # checks if there is atleast one lowercase character
     print("Password must contain at least one lowercase letter.")
 
-elif not any(char.isupper() for char in new_password):
+elif not any(char.isupper() for char in new_password): # checks if there is atleast uppercase character
     print("Password must contain at least one uppercase letter.")
 # If the password meets all the conditions, print a success message and end the program
 else:
-    confirm_new_password = input("Please re-enter your new password: ")
+    confirm_new_password = input("Please re-enter your new password: ") # makes user re-enter password
 
     if new_password == confirm_new_password:
         print("Password was successfully changed. ")

@@ -8,6 +8,7 @@
 # Think about:
 # - Getting user input
 # - Converting to the right data type
+square_input = int(input("Please enter a number"))
 
 
 # How do we calculate and display squares?
@@ -15,4 +16,7 @@
 # - Creating a loop from 1 to the input number
 # - Calculating squares
 # - Formatting the output
+for i in range(1, square_input + 1): 
+    square = i ** 2 # I had to look up how to square a number
+    print(f"{i:<8} {square}")
 

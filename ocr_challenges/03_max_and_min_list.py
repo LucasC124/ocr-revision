@@ -15,8 +15,8 @@ for i in range(number_count):
 
 # Do you want to only display max and min numbers once there are two or more numbers in the list?
 if len(number_list) > 1: # I had to look up how to use min and max for the list
-    print("maximum number", max(number_list))
-    print("minimum number", min(number_list))
+    print("maximum number", max(number_list)) # prints maximum number
+    print("minimum number", min(number_list)) # prints minimum number
 else:
     print("Not enough numbers entered. ")
     

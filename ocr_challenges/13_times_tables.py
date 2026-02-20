@@ -8,6 +8,7 @@
 # Think about:
 # - Getting user input
 # - Converting to a number
+times_table_input = int(input("Please enter a number"))
 
 
 # How do we generate and display the times table?
@@ -15,4 +16,7 @@
 # - Creating a loop for multipliers
 # - Calculating each result
 # - Formatting the output
+for i in range(1, 11): # this is a loop from 1 to 10
+    times_table_result = times_table_input * i
+    print(f"{times_table_input} x {i} = {times_table_result}") # i did have to look up how to print each calculation out
 

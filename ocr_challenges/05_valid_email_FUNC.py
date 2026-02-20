@@ -26,19 +26,19 @@ def email_check():
     new_email = input("Please enter a new email address: ")
 
     if " " in new_email:
-        print("Email must not contain any spaces. ")
+        print("Email must not contain any spaces. ") # checks for any spaces
 
     elif new_email.count("@") != 1:
-        print("Email can only contain one '@' symbol. ")
+        print("Email can only contain one '@' symbol. ") # checks how many @ symboles are used
 
     else:
         email_user, email_domain = new_email.split("@") # I had to search up how to split the two email parts up
 
         if len(email_user) == 0:
-            print("Email user before '@' cannot be empty. ")
+            print("Email user before '@' cannot be empty. ") # checks if first part of the email is filled
 
         elif "." not in email_domain:
-            print("Domain must contain a '.' symbol. ")
+            print("Domain must contain a '.' symbol. ") # checks for a . in the email
 
         else:
             print("Email is valid. ")

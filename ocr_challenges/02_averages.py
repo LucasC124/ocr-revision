@@ -22,6 +22,7 @@ average_of_num = input("Type 'average of the numbers' to calculate the average o
 # Output the average
 
 if average_of_num.lower() == 'average of the numbers':
+    # this is how to work out the average
     average = sum(num_input) / len(num_input) # I had to look up how to do the average 
     print("average:", average)
 
